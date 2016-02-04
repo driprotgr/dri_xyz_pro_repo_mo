@@ -28,11 +28,14 @@ public class LoginActivity extends Activity {
         backButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                backButton();
                 debug("back button");
             }
         });
     }
-
+    void backButton(){
+        this.finish();
+    }
     void debug(String message){
         System.out.println("Login Screen >> " + message);
     }

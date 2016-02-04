@@ -3,5 +3,6 @@
     <string name="search_driver">Looking for a driver?</string>
     <string name="sign_in">Login</string>
     <string name="sign_up">Sign Up</string>
+    <string name="welcome_text">Welcome!</string>
 
 </resources>
