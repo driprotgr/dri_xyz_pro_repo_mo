@@ -1,4 +1,4 @@
-package com.sachet.traveltracker;
+package com.sachet.traveltracker.screens;
 
 import android.app.Activity;
 import android.content.Context;
@@ -8,6 +8,8 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
+
+import com.sachet.traveltracker.R;
 
 /**
  * Created by lenovo on 02-02-2016.

@@ -2,7 +2,21 @@
     <string name="app_name">TravelTracker</string>
     <string name="search_driver">Looking for a driver?</string>
     <string name="sign_in">Login</string>
+    <string name="sign_in_caps">LOG IN</string>
     <string name="sign_up">Sign Up</string>
+    <string name="sign_up_caps">SIGN UP</string>
     <string name="welcome_text">Welcome!</string>
+    <string name="destination_text">To one destination</string>
+    <string name="mobile_number">Mobile Number</string>
+    <string name="password">Password</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="forgot_password">Forgot Password?</string>
+    <string name="new_user">New User?</string>
+    <string name="divider_text">OR</string>
+    <string name="ok_text">OK</string>
+    <string name="title_activity_sign_up">SignUp</string>
+    <string name="fill_up_details">Fill up the below details</string>
+    <string name="already_registered">Already have an account?</string>
+    <string name="connect_with_us">Connect with us</string>
 
 </resources>

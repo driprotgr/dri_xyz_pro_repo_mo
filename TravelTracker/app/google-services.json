@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_id": "travelsmart-aef65",
+    "project_number": "349647990954",
+    "name": "TravelSmart"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:349647990954:android:99b55a0607361b9a",
+        "client_id": "android:com.sachet.traveltracker",
+        "client_type": 1,
+        "android_client_info": {
+          "package_name": "com.sachet.traveltracker"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "349647990954-hh13nj7u0un001sjctub4l643njb2fig.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.sachet.traveltracker",
+            "certificate_hash": "6105495090618B500E8C37256A62BBF8CEAA9B07"
+          }
+        },
+        {
+          "client_id": "349647990954-ua0j8n6sl6l7uj48lfnkob89pn3lqghd.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "cloud_messaging_service": {
+          "status": 1,
+          "apns_config": []
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "google_signin_service": {
+          "status": 2
+        },
+        "ads_service": {
+          "status": 1
+        }
+      }
+    }
+  ],
+  "client_info": [],
+  "ARTIFACT_VERSION": "1"
+}

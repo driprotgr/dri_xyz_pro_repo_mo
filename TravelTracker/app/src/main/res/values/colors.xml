@@ -6,4 +6,7 @@
 
     <color name="skyBlueDark">#ff2196f3</color>
     <color name="skyBlueDarkTrans">#cc2196f3</color>
+    <color name="skyBlue">#90caf9</color>
+    <color name="greyLight">#7d8388</color>
+    <color name="loginBgWhite">#ffffff</color>
 </resources>
