@@ -1,12 +1,24 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorPrimary">#3F51B5</color>
+    <!--<color name="colorPrimary">#1e88e5</color>-->
+    <color name="colorPrimary">#1b7acf</color>
     <color name="colorPrimaryDark">#303F9F</color>
     <color name="colorAccent">#FF4081</color>
 
     <color name="skyBlueDark">#ff2196f3</color>
     <color name="skyBlueDarkTrans">#cc2196f3</color>
     <color name="skyBlue">#90caf9</color>
-    <color name="greyLight">#7d8388</color>
+    <color name="punch_line_text_color">#7d8388</color>
     <color name="loginBgWhite">#ffffff</color>
+
+    <color name="action_button_bg_color">#1b7acf</color>
+    <color name="action_button_text_color">#ffffff</color>
+    <color name="sub_title_text_color">#2196f3</color>
+    <color name="hint_text_color">#b5b4b4</color>
+    <color name="input_text_color">#b5b4b4</color>
+    <color name="active_text_color">#2196f3</color>
+    <color name="field_validation_text_color">#e47b71</color>
+    <color name="flat_button_text_color">#64b5f6</color>
+    <color name="label_text_color">#2f2c2c</color>
+    <color name="check_box_text_color">#696969</color>
 </resources>

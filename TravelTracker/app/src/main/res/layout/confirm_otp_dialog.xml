@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_margin="@dimen/activity_horizontal_margin"
+    android:id="@+id/editTextLayout">
+
+    <!--<ImageView-->
+        <!--android:id="@+id/imageDialog"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_marginRight="6dp" />-->
+    <TextView
+        style="@style/subTitle"
+        android:id="@+id/message"
+        android:text="Verification code has been sent to your mobile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/medium_margin"
+        android:textSize="@dimen/popup_title_text_size"
+        />
+
+
+    <EditText
+        style="@style/editText"
+        android:id="@+id/verificationText"
+        android:hint="@string/oneTimePassword"
+        android:inputType="number"
+        android:maxLength="6"
+        android:layout_below="@+id/message"
+        android:layout_marginTop="@dimen/medium_margin"
+        android:layout_marginLeft="@dimen/medium_margin"
+        android:layout_marginRight="@dimen/medium_margin"
+        android:textAlignment="center"
+        />
+
+    <TextView
+        style="@style/label"
+        android:id="@+id/timer"
+        android:text="06:00"
+        android:layout_marginTop="@dimen/small_margin"
+        android:layout_marginLeft="@dimen/medium_margin"
+        android:layout_marginRight="@dimen/medium_margin"
+        android:layout_below="@+id/verificationText"
+        android:textColor="@android:color/holo_red_dark"
+        android:textAlignment="center"
+        />
+
+    <TextView
+        style="@style/punchLine"
+        android:id="@+id/waitMessage"
+        android:text="Please wait, this may takes few minutes"
+        android:layout_marginTop="@dimen/small_margin"
+        android:layout_marginLeft="@dimen/medium_margin"
+        android:layout_marginRight="@dimen/medium_margin"
+        android:layout_below="@+id/timer"
+        android:textAlignment="center"
+        />
+</RelativeLayout>

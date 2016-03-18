@@ -14,11 +14,11 @@ import com.sachet.traveltracker.R;
 /**
  * Created by lenovo on 02-02-2016.
  */
-public class CustomAdapter extends PagerAdapter{
+public class SplashBackgroundAdapter extends PagerAdapter{
     Context context;
     int[] imageId = {R.drawable.image_1, R.drawable.image_2, R.drawable.image_3, R.drawable.image_4};
 
-    public CustomAdapter(Context context){
+    public SplashBackgroundAdapter(Context context){
         this.context = context;
     }
 

@@ -17,6 +17,7 @@ public class Validation {
     private static final String REQUIRED_MSG = "Required Field";
     private static final String EMAIL_MSG = "Invalid Email";
     private static final String PHONE_MSG = "Phone number must be a 10 digit number";
+    private static final String CONFIRM_PASSWORD_MESSAGE = "Password and confirm password must be same";
 
     // call this method when you need to check email validation
     public static boolean isEmailAddress(EditText editText, boolean required) {
@@ -49,6 +50,11 @@ public class Validation {
 
     // check the input field has any text or not
     // return true if it contains text otherwise false
+    public static boolean hasText(EditText editText,boolean required) {
+        if ( required && !hasText(editText) ) return false;
+        return true;
+    }
+
     public static boolean hasText(EditText editText) {
 
         String text = editText.getText().toString().trim();
@@ -57,6 +63,18 @@ public class Validation {
         // length 0 means there is no text
         if (text.length() == 0) {
             editText.setError(REQUIRED_MSG);
+            return false;
+        }
+        return true;
+    }
+
+    public static boolean matchPassword(EditText password,EditText confrimPassword){
+        String pswd = password.getText().toString().trim();
+        String confirmPswd = confrimPassword.getText().toString().trim();
+        confrimPassword.setError(null);
+
+        if(!pswd.equals(confirmPswd)){
+            confrimPassword.setError(CONFIRM_PASSWORD_MESSAGE);
             return false;
         }
 

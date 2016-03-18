@@ -5,64 +5,55 @@
     android:layout_height="match_parent"
     android:background="@color/loginBgWhite"
     android:id="@+id/relativeLayout"
-    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/small_margin"
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
-    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingTop="@dimen/small_margin"
     tools:context=".screens.Login"
     android:clickable="false">
 
-    <ImageButton
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/backButton"
-        android:background="@drawable/back_button"/>
+    <!--<ImageButton-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:id="@+id/backButton"-->
+        <!--android:background="@drawable/back_button"/>-->
 
-    <TextView android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/backButton"
-        android:id="@+id/welcomeText"
-        android:text="@string/welcome_text"
-        android:textAlignment="center"
-        android:textSize="60sp"
-        android:textColor="@color/skyBlue"
-        android:layout_centerHorizontal="true"
+    <!--<TextView style="@style/subTitle"-->
+        <!--android:id="@+id/welcomeText"-->
+        <!--android:text="@string/welcome_text"-->
+        <!--/>-->
+
+    <TextView style="@style/punchLine"
+        android:id="@+id/text"
         />
 
-    <TextView android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/welcomeText"
-        android:id="@+id/destinationText"
-        android:text="@string/destination_text"
-        android:textSize="20sp"
-        android:textColor="@color/greyLight"
-        android:gravity="right"
-        android:layout_alignEnd="@+id/welcomeText"
-        android:layout_alignRight="@+id/welcomeText"
-        />
+    <!--<TextView style="@style/punchLine"-->
+        <!--android:layout_below="@+id/welcomeText"-->
+        <!--android:id="@+id/destinationText"-->
+        <!--android:text="@string/destination_text"-->
+        <!--android:layout_alignEnd="@+id/welcomeText"-->
+        <!--android:layout_alignRight="@+id/welcomeText"-->
+        <!--/>-->
 
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
         android:id="@+id/editTextLayout"
-        android:layout_marginTop="@dimen/activity_vertical_margin_30"
-        android:layout_below="@+id/destinationText">
+        android:layout_marginTop="@dimen/xlarge_margin">
 
     <android.support.design.widget.TextInputLayout
             android:id="@+id/mobileNumberWrapper"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="@dimen/activity_vertical_margin_50"
-            android:layout_marginRight="@dimen/activity_vertical_margin_50"
+            android:layout_marginLeft="@dimen/large_margin"
+            android:layout_marginRight="@dimen/large_margin"
         >
 
             <EditText
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                style="@style/editText"
                 android:hint="@string/mobile_number"
                 android:inputType="number"
-                android:layout_centerHorizontal="true"
                 android:maxLength="10"
                 android:gravity="left"
                 android:id="@+id/mobileNumber"
@@ -74,26 +65,22 @@
         android:id="@+id/passwordWrapper"
         android:layout_width="match_parent"
         android:layout_below="@+id/mobileNumberWrapper"
-        android:layout_marginLeft="@dimen/activity_vertical_margin_50"
-        android:layout_marginRight="@dimen/activity_vertical_margin_50"
+        android:layout_marginLeft="@dimen/large_margin"
+        android:layout_marginRight="@dimen/large_margin"
         android:layout_height="wrap_content">
 
         <EditText
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            style="@style/editText"
             android:hint="@string/password"
             android:inputType="textPassword"
-            android:layout_centerHorizontal="true"
             android:maxLength="10"
-            android:gravity="left"
             android:id="@+id/password"
             />
     </android.support.design.widget.TextInputLayout>
 
 
     <ImageButton
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        style="@style/imageButton"
         android:id="@+id/eyeButton"
         android:background="@drawable/eye_open"
         android:layout_below="@+id/mobileNumberWrapper"
@@ -101,13 +88,10 @@
         android:layout_marginTop="@dimen/activity_horizontal_margin"
         android:layout_alignParentRight="true"/>
 
-    <TextView android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+    <TextView style="@style/flatButton"
         android:layout_below="@+id/passwordWrapper"
         android:id="@+id/forgotPassword"
         android:text="@string/forgot_password"
-        android:textSize="20sp"
-        android:textColor="@color/skyBlue"
         android:gravity="right"
         android:layout_alignEnd="@+id/passwordWrapper"
         android:layout_alignRight="@+id/passwordWrapper"
@@ -116,17 +100,16 @@
     </RelativeLayout>
 
 
-
-
-
     <Button
         style="@style/smallButton"
         android:text="@string/sign_in_caps"
         android:layout_weight="1"
         android:layout_below="@+id/editTextLayout"
-        android:layout_margin="@dimen/activity_vertical_margin_50"
-        android:layout_marginBottom="@dimen/activity_vertical_margin"
-        android:id="@+id/signIn" />
+        android:layout_marginLeft="@dimen/large_margin"
+        android:layout_marginRight="@dimen/large_margin"
+        android:layout_marginBottom="@dimen/medium_margin"
+        android:layout_marginTop="@dimen/medium_margin"
+        android:id="@+id/signIn"/>
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -136,8 +119,8 @@
         android:layout_below="@+id/signIn"
         android:layout_alignEnd="@+id/editTextLayout"
         android:layout_alignRight="@+id/editTextLayout"
-        android:layout_marginLeft="@dimen/activity_vertical_margin_50"
-        android:layout_marginRight="@dimen/activity_vertical_margin_50"
+        android:layout_marginLeft="@dimen/large_margin"
+        android:layout_marginRight="@dimen/large_margin"
         >
         <View style="@style/Divider"
             android:layout_weight="2"
@@ -165,20 +148,23 @@
         android:gravity="center_horizontal"
         >
         <ImageButton
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            style="@style/imageButton"
             android:id="@+id/googleButton"
             android:background="@drawable/google_plus"
-            android:layout_marginRight="@dimen/activity_vertical_margin_30"
+            android:layout_marginRight="@dimen/medium_margin"
             />
-
+        <!--<com.google.android.gms.common.SignInButton-->
+            <!--android:id="@+id/googleButton"-->
+            <!--android:layout_marginRight="@dimen/activity_vertical_margin_30"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content" />-->
         <ImageButton
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="@dimen/activity_vertical_margin_30"
+            style="@style/imageButton"
+            android:layout_marginLeft="@dimen/medium_margin"
             android:id="@+id/facebookButton"
             android:background="@drawable/facebook" />
         </LinearLayout>
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -187,19 +173,15 @@
         android:layout_alignParentBottom="true"
         >
 
-        <TextView android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+        <TextView
+            style="@style/label"
             android:id="@+id/newUser"
             android:text="@string/new_user"
-            android:textSize="20sp"
             android:layout_weight="1"
             android:gravity="right" />
-        <TextView android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+        <TextView style="@style/flatButton"
             android:id="@+id/signUp"
-            android:text="@string/sign_up_caps"
-            android:textSize="20sp"
-            android:textColor="@color/skyBlue"
+            android:text="@string/sign_up"
             android:layout_toRightOf="@+id/newUser"
             android:layout_weight="1"
             android:gravity="left"

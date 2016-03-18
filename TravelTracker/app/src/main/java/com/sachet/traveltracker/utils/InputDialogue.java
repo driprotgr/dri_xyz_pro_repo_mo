@@ -17,16 +17,56 @@ import com.sachet.traveltracker.R;
  */
 public class InputDialogue {
 
+    public static void createCustomDialog(Context context){
+
+        // Create custom dialog object
+        final Dialog dialog = new Dialog(context);
+        // Include dialog.xml file
+        dialog.setContentView(R.layout.confirm_otp_dialog);
+        // Set dialog title
+//        dialog.setTitle("Custom Dialog");
+
+        // set values for custom dialog components - text, image and button
+        EditText text = (EditText) dialog.findViewById(R.id.verificationText);
+//        text.setText("Custom dialog Android example.");
+//        ImageView image = (ImageView) dialog.findViewById(R.id.imageDialog);
+//        image.setImageResource(R.drawable.icon_user_detail);
+
+        dialog.show();
+/*
+        Button declineButton = (Button) dialog.findViewById(R.id.declineButton);
+        // if decline button is clicked, close the custom dialog
+        declineButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                // Close dialog
+                dialog.dismiss();
+            }
+        });
+
+        Button acceptButton = (Button) dialog.findViewById(R.id.acceptButton);
+        // if decline button is clicked, close the custom dialog
+        acceptButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                // Close dialog
+                dialog.dismiss();
+            }
+        });*/
+    }
+
     public static void createInputDialogue(Context context,String title, final UserActionListener userActionListener){
         final AlertDialog.Builder builder = new AlertDialog.Builder(context);
-        builder.setTitle(title);
 
 // Set up the input
+        builder.setTitle(title);
+
         final EditText input = new EditText(context);
 // Specify the type of input expected; this, for example, sets the input as a password, and will mask the text
-        input.setInputType(InputType.TYPE_CLASS_TEXT );
+        input.setInputType(InputType.TYPE_CLASS_TEXT);
         builder.setView(input);
-        builder.setPositiveButton("OK",null);
+
+        builder.setPositiveButton("OK", null);
 
         builder.setNegativeButton("Cancel", new DialogInterface.OnClickListener() {
             @Override
@@ -37,7 +77,7 @@ public class InputDialogue {
 
         final AlertDialog alertDialog = builder.show();
         Button positiveButton = alertDialog.getButton(AlertDialog.BUTTON_POSITIVE);
-//        positiveButton.setBackgroundColor(context.getResources().getColor(R.color.skyBlueDark));
+
         positiveButton.setOnClickListener(new View.OnClickListener() {
 
             @Override
@@ -55,6 +95,6 @@ public class InputDialogue {
     }
 
     public interface UserActionListener{
-        public void onPositiveAction(String text);
+        void onPositiveAction(String text);
     }
 }

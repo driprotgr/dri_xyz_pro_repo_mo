@@ -2,8 +2,7 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".screens.Splash">
+    android:layout_height="match_parent">
 
     <android.support.v4.view.ViewPager
         android:id="@+id/viewPager"
@@ -45,19 +44,20 @@
         android:layout_height="wrap_content"
         android:id="@+id/linear"
         android:layout_alignBottom="@id/viewPager"
-        android:layout_marginBottom="@dimen/activity_vertical_margin"
-        android:layout_marginTop="@dimen/activity_vertical_margin"
-        >
+        android:layout_marginBottom="@dimen/small_margin"
+        android:layout_marginTop="@dimen/small_margin">
 
         <Button
             style="@style/smallButton"
             android:text="@string/sign_up"
             android:layout_weight="1"
+            android:layout_margin="@dimen/least_margin"
             android:id="@+id/signUp"/>
         <Button
             style="@style/smallButton"
             android:text="@string/sign_in"
             android:layout_weight="1"
+            android:layout_margin="@dimen/least_margin"
             android:layout_toRightOf="@+id/signUp"
             android:id="@+id/signIn"/>
 

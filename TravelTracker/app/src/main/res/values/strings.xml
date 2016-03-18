@@ -1,22 +1,81 @@
 <resources>
+    <!--<string name="ids">Ids</string>-->
+    <string name="facebook_app_id">946860405422249</string>
+    <!--<string name="ids">Ids</string>-->
+
+    <string-array name="genders">
+        <item>Male</item>
+        <item>Female</item>
+        <item>Other</item>
+    </string-array>
+
+    <!--<string name="titles">Page Titles </string>-->
     <string name="app_name">TravelTracker</string>
+    <string name="title_activity_sign_up">Sign Up</string>
+    <string name="title_activity_sign_in">Sign In</string>
+    <string name="title_additional_info">Additional Information</string>
+    <string name="title_notification">Notification</string>
+    <string name="title_user_profile">User Profile</string>
+    <string name="title_favourite">Favourite</string>
+    <!--<string name="titles">Page Titles </string>-->
+
+
     <string name="search_driver">Looking for a driver?</string>
+
+
+    <!--<string name="Button/Label Text">Button/Label Texts</string>-->
     <string name="sign_in">Login</string>
     <string name="sign_in_caps">LOG IN</string>
     <string name="sign_up">Sign Up</string>
-    <string name="sign_up_caps">SIGN UP</string>
+    <string name="get_started">Get Started</string>
     <string name="welcome_text">Welcome!</string>
     <string name="destination_text">To one destination</string>
     <string name="mobile_number">Mobile Number</string>
+    <string name="licence_number">Driving License Number</string>
     <string name="password">Password</string>
+    <string name="name">Name</string>
+    <string name="email_address">Email Address</string>
     <string name="confirm_password">Confirm Password</string>
     <string name="forgot_password">Forgot Password?</string>
     <string name="new_user">New User?</string>
     <string name="divider_text">OR</string>
     <string name="ok_text">OK</string>
-    <string name="title_activity_sign_up">SignUp</string>
     <string name="fill_up_details">Fill up the below details</string>
     <string name="already_registered">Already have an account?</string>
     <string name="connect_with_us">Connect with us</string>
+    <string name="authentication_failed">Authentication Failed</string>
+    <string name="login_cancelled">Login Cancelled</string>
+    <string name="user_category">User Category</string>
+    <string name="are_you_driver">Are you a driver?</string>
 
+
+    <string name="search_again">Search Again</string>
+    <string name="place_details">
+    <![CDATA[
+        <b>%1$s</b>
+        <br/>
+        <i>Place Id: %2$s</i>
+        <br/>
+        Address: %3$s
+        <br/>
+        Phone: %4$s
+        <br/>
+        Website: %5$s
+    ]]>
+    </string>
+    <string name="cancel">Cancel</string>
+    <string name="confirm">Confirm</string>
+    <string name="resend">Resend</string>
+    <string name="timeout">Time out</string>
+    <string name="generic_error">Generic error</string>
+    <string name="nointernet">No internet connection available</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="sendVerificationCode">Send OTP</string>
+    <string name="oneTimePassword">One Time Password</string>
+    <string name="title_activity_reset_password">Reset Password</string>
+    <string name="reset">Reset</string>
+    <string name="gender">Gender</string>
+    <string name="selectLocation">Tap on map to select location</string>
 </resources>
